@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Fest 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0052d4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6a11cb;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            border: 4px solid #4facfe;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 3px solid #0052d4;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #b3d9ff;
+        }
+
+        .radio-group input {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(to right, #0052d4, #4364f7);
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #0052d4;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎉 Tech Fest 2026 🎉</h1>
+
+    <!-- Event Banner -->
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" width="600" alt="Event Banner">
+
+    <h2>📢 Tech Fest Promotional Video</h2>
+
+    <!-- Tech Style Video -->
+    <video width="450" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <h2>🎵 Background Tune</h2>
+
+    <!-- Instrumental Tune / Melody -->
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support audio.
+    </audio>
+
+    <h2>📝 Event Registration Form</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Event Date</label>
+        <input type="date">
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Event Type</label>
+        <select>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Competition</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4"></textarea>
+
+        <label>Upload ID Proof</label>
+        <input type="file">
+
+        <input type="submit" value="Register Now 🚀">
+    </form>
+
+    <footer>
+        © 2026 Tech Fest | Online Event Registration & Promotional Portal
+    </footer>
+
+</div>
+
+</body>
+</html>
