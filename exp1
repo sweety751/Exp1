@@ -2,144 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tech Fest 2026</title>
+    <title>Tech Event Portal</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
+            background: linear-gradient(to right, #020617, #0f172a);
+            color: #ffffff;
             margin: 0;
-            padding: 0;
         }
 
         .container {
-            width: 85%;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
         }
 
-        h1 {
-            text-align: center;
-            color: #0052d4;
-        }
-
-        h2 {
-            text-align: center;
-            color: #6a11cb;
+        h1, h2 {
+            color: #38bdf8;
         }
 
         img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 20px auto;
             display: block;
-            margin: auto;
-            border-radius: 15px;
-            border: 4px solid #4facfe;
         }
 
-        video, audio {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            border: 3px solid #0052d4;
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: left;
         }
 
         label {
+            display: block;
+            margin-top: 15px;
             font-weight: bold;
-            color: #333;
         }
 
         input, select, textarea {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
-            margin-bottom: 15px;
             border-radius: 8px;
-            border: 2px solid #b3d9ff;
+            border: none;
+            outline: none;
         }
 
         .radio-group input {
             width: auto;
+            margin-right: 5px;
         }
 
         input[type="submit"] {
-            background: linear-gradient(to right, #0052d4, #4364f7);
-            color: white;
-            border: none;
-            padding: 12px;
+            background: linear-gradient(to right, #38bdf8, #22d3ee);
+            color: #020617;
             font-size: 16px;
-            border-radius: 25px;
+            font-weight: bold;
             cursor: pointer;
+            margin-top: 25px;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 0.85;
+        }
+
+        video, audio {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
         }
 
         footer {
             text-align: center;
-            margin-top: 20px;
-            color: #0052d4;
-            font-weight: bold;
+            margin-top: 30px;
+            padding: 15px;
+            color: #cbd5f5;
+            font-size: 14px;
         }
     </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>🎉 Tech Fest 2026 🎉</h1>
+    <h1>🚀 Tech Fest 2026</h1>
+    <p>Innovation • Coding • Future Technologies</p>
 
-    <!-- Event Banner -->
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" width="600" alt="Event Banner">
+    <!-- Event Banner Image -->
+    <h2>🖼️ Tech Event Banner</h2>
+    <img src="C:\Users\Asus\Downloads\OIP.jpg" alt="Tech Event Banner">
 
-    <h2>📢 Tech Fest Promotional Video</h2>
-
-    <!-- Tech Style Video -->
+    <!-- Promo Video -->
+    <h2>🎥 Tech Event Promo Video</h2>
     <video width="450" controls>
-        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-        Your browser does not support video.
+        <source src="C:\Users\Asus\Downloads\New Product Launching Motion Graphics.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
 
-    <h2>🎵 Background Tune</h2>
-
-    <!-- Instrumental Tune / Melody -->
+    <!-- Background Audio -->
+    <h2>🎧 Tech Event Theme Music</h2>
     <audio controls>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-        Your browser does not support audio.
+        <source src="C:\Users\Asus\Downloads\celtic-irish-scottish-tin-whistle-background-music-10455 (2).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
 
-    <h2>📝 Event Registration Form</h2>
+    <!-- Registration Form -->
+    <h2>📝 Tech Event Registration Form</h2>
 
     <form>
-        <label>Name</label>
-        <input type="text" required>
 
-        <label>Email</label>
-        <input type="email" required>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
 
-        <label>Event Date</label>
-        <input type="date">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
 
-        <label>Gender</label>
+        <label for="date">Event Date *</label>
+        <input type="date" id="date" required>
+
+        <label>Gender *</label>
         <div class="radio-group">
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
         </div>
 
-        <label>Event Type</label>
-        <select>
-            <option>Workshop</option>
-            <option>Seminar</option>
-            <option>Competition</option>
+        <label for="event">Tech Event Type *</label>
+        <select id="event" required>
+            <option value="">-- Select Event Type --</option>
+            <option>AI Workshop</option>
+            <option>Hackathon</option>
+            <option>Coding Competition</option>
+            <option>Web Development Seminar</option>
         </select>
 
-        <label>Address</label>
-        <textarea rows="4"></textarea>
+        <label for="address">Address</label>
+        <textarea id="address" rows="4" placeholder="Enter your address"></textarea>
 
-        <label>Upload ID Proof</label>
-        <input type="file">
+        <label for="file">Upload College ID / Tech Profile</label>
+        <input type="file" id="file" accept=".jpg,.png,.pdf">
 
         <input type="submit" value="Register Now 🚀">
+
     </form>
 
     <footer>
